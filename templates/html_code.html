@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rate_predictor</title>
+</head>
+<body>
+<h1>Movie Rating Prediction</h1>
+<div>
+    <h2>Rating Prediction</h2>
+    <form action="{{ url_for('predict')}}" method="post">
+    <label for="Actor" >Choose a Actor :</label>
+    <select name="Actor" id="Actor">
+        <option>select your actor</option>
+        <option value=8>Mohanlal</option>
+        <option value=0>Biju Menon</option>
+        <option value=2>Dulquer</option>
+        <option value=3>Indrajith Sukumaran</option>
+        <option value=1>Dileep</option>
+        <option value=4>Jayaram</option>
+        <option value=5>Jayasurya</option>
+        <option value=6>Kunchacko Boban</option>
+        <option value=7>Mammmootty</option>
+        <option value=9>Nivin Pauly</option>
+        <option value=10>Prithviraj Sukumaran</option>
+        <option value=11>Siddique</option>
+        <option value=12>Suraj Venjaramoodu</option>
+    </select><br>
+    <label for="Director">Choose a Director :</label>
+    <select name="Director" id="Director">
+        <option>select your director</option>
+        <option value=71>Fazil</option>
+        <option value="188">Raffi</option>
+        <option value=4>Aashiq Abu</option>
+        <option value=13>Aku Akbar</option>
+        <option value=30>Anwar Rasheed</option>
+        <option value=43>B.Unnikrishnan</option>
+        <option value=59>Blessy</option>
+        <option value=325>Vysakh</option>
+        <option value=314>Vinayan</option>
+        <option value=307>V.M.Vinu</option>
+        <option value=182>Prithviraj Sukumaran</option>
+        <option value=265>Siddique</option>
+        <option value=262>Sibi Malayil</option>
+        <option value=245>Shaji Kailas</option>
+        <option value=280>Sugeeth</option>
+        <option value=243>Shafi</option>
+        <option value=216>Roshan Andrews</option>
+        <option value=205>Ranjith</option>
+    </select><br>
+    <label>Choose the Category</label><br>
+    <input type="checkbox" id="Action" name="action" value="1">
+    <input type="Hidden" name="action" value="0">
+    <label for="Action">Action</label><br>
+    <input type="checkbox" id="Adventure" name="Adventure" value="1">
+    <input type="Hidden"  name="Adventure" value="0">
+    <label for="Adventure"> Adventure</label><br>
+    <input type="checkbox" id="Comedy" name="Comedy" value="1">
+    <input type="Hidden"  name="Comedy" value="0">
+    <label for="Comedy"> Comedy</label><br>
+    <input type="checkbox" id="Drama" name="Drama" value="1">
+    <input type="Hidden"  name="Drama" value="0">
+    <label for="Drama"> Drama</label><br>
+    <input type="checkbox" id="Triller" name="Triller" value="1">
+    <input type="Hidden"  name="Triller" value="0">
+    <label for="Triller"> Triller</label><br>
+    <input type="checkbox" id="Crime" name="Crime" value="1">
+    <input type="Hidden" name="Crime" value="0">
+    <label for="Crime"> Crime</label><br>
+    <input type="checkbox" id="Fantasy" name="Fantasy" value="1">
+    <input type="Hidden" name="Fantasy" value="0">
+    <label for="Fantasy"> Fantasy</label><br>
+    <input type="checkbox" id="Mystery" name="Mystery" value="1">
+    <input type="Hidden" name="Mystery" value="0">
+    <label for="Mystery"> Mystery</label><br>
+    <input type="checkbox" id="Family" name="Family" value="1">
+    <input type="Hidden" name="Family" value="0">
+    <label for="Family"> Family</label><br>
+    <input type="checkbox" id="History" name="History" value="1">
+    <input type="Hidden" name="History" value="0">
+    <label for="History"> History</label><br>
+    <input type="checkbox" id="Romance" name="Romance" value="1">
+    <input type="Hidden"  name="Romance" value="0">
+    <label for="Romance"> Romance</label><br>
+    <input type="checkbox" id="War" name="War" value="1">
+    <input type="Hidden" name="War" value="0">
+    <label for="War"> War</label><br>
+    <input type="checkbox" id="Biography" name="Biography" value="1">
+    <input type="Hidden" name="Biography" value="1">
+    <label for="Biography"> Biography</label><br>
+    <input type="submit" value="Submit"><br>
+    </form>
+        {{prediction_text}}
+</div>
+</body>
+</html>
+
+
+
+
