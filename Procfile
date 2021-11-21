@@ -1,0 +1,1 @@
+web: gunicorn Movie_Flask_Code:app
